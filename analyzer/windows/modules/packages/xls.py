@@ -15,6 +15,7 @@ class XLS(Package):
         self.config = config
         self.options = options
         self.options["exclude-apis"] = "memcpy"
+        self.options["ntdll-protect"] = "0"
 
     PATHS = [
         ("ProgramFiles", "Microsoft Office", "EXCEL.EXE"),
